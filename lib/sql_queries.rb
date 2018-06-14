@@ -26,8 +26,8 @@ def selects_most_prominent_color_and_returns_with_count
         GROUP BY color
         ORDER BY COUNT(*) DESC
         )
-FROM (SELECT DISTINCT color
-      FROM bears) AS colors limit 1
+  FROM (SELECT DISTINCT color
+        FROM bears) AS colors limit 1
   ;"
 end
 
